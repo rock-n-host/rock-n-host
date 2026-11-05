@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="Explore the rock-n-host portfolio through an interactive browser terminal.">
+  <title>Terminal — Rock ’n’ Host</title>
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="../js/main.js"></script>
+  <script defer src="../js/terminal.js"></script>
+</head>
+<body id="top">
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap">
+    <a class="brand" href="../index.html" aria-label="Rock-n-host home"><span class="mark" aria-hidden="true">ϟ</span> rock-n-host</a>
+    <nav aria-label="Main navigation"><a href="./projects.html">Projects</a><a href="./about.html">About</a><a href="./terminal.html" aria-current="page">Terminal</a><a class="profile" href="https://github.com/rock-n-host">GitHub ↗</a></nav>
+  </header>
+  <main id="main" class="subpage">
+    <section class="section terminal-section wrap" id="terminal" aria-labelledby="terminal-title">
+      <h1 class="sr-only" id="terminal-title">Terminal</h1>
+      <div class="terminal-window">
+        <div class="terminal-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>guest@rock-n-host ~</span><span class="terminal-badge">BROWSER SHELL</span></div>
+        <div class="terminal-body">
+          <div class="terminal-log" id="terminal-log" role="log" aria-label="Terminal output" aria-live="polite" aria-relevant="additions" tabindex="0"><div class="terminal-entry welcome">Welcome to the other side of the interface.
+Type help to look around. Try ls, fetch, or cat about.txt.</div></div>
+          <form id="terminal-form" autocomplete="off">
+            <label for="terminal-input"><span class="prompt-user">guest</span><span aria-hidden="true">@rnh</span><span id="terminal-path" aria-hidden="true"> ~ </span><span aria-hidden="true">❯</span><span class="sr-only"> Terminal command</span></label>
+            <input id="terminal-input" name="command" type="text" spellcheck="false" autocapitalize="off" maxlength="300" aria-describedby="terminal-hint" placeholder="help" disabled>
+            <button type="submit" aria-label="Run command" disabled>↵</button>
+          </form>
+        </div>
+        <div class="terminal-bottom"><span id="terminal-hint">↑ ↓ history · Tab complete</span><div class="command-shortcuts" aria-label="Suggested commands"><button type="button" data-command="help" disabled>help</button><button type="button" data-command="ls" disabled>ls</button><button type="button" data-command="fetch" disabled>fetch</button><button type="button" data-command="clear" disabled>clear</button></div></div>
+      </div>
+      <noscript><p>Enable JavaScript to use the terminal. Explore the <a href="./projects.html">projects page</a> instead.</p></noscript>
+    </section>
+  </main>
+  <footer class="wrap"><span>rock-n-host <small> / END OF TRANSMISSION</small></span><button class="motion-toggle" type="button" aria-pressed="false" hidden>Pause motion</button><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

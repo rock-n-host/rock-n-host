@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="description" content="Rock-n-host's corner of the internet. Self-hosted tools, Linux configurations, and a terminal to explore it all.">
+  <title>Rock ’n’ Host — until our final days!</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./js/main.js"></script>
+</head>
+<body id="top">
+  <dialog class="boot-screen" id="boot-screen" aria-labelledby="boot-title">
+    <div class="boot-console">
+      <div class="boot-console-bar"><span>RNH / BOOT ROM</span><span>v.01</span></div>
+      <h2 id="boot-title">Establishing a signal<span>_</span></h2>
+      <div class="boot-output" aria-hidden="true">
+        <p class="boot-line"><b>[ OK ]</b> Initializing personal space</p>
+        <p class="boot-line"><b>[ OK ]</b> Mounting /projects</p>
+        <p class="boot-line"><b>[ OK ]</b> Loading words, wires &amp; ideas</p>
+        <p class="boot-line"><b>[ OK ]</b> Tuning the signal</p>
+        <p class="boot-line boot-ready">guest@rnh ~ ❯ open index.html</p>
+      </div>
+      <div class="boot-console-footer"><span>WELCOME TO ROCK-N-HOST</span><button type="button" id="skip-boot" autofocus>Skip intro ↗</button></div>
+    </div>
+  </dialog>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="wrap">
+    <a class="brand" href="./index.html" aria-label="Rock-n-host home"><span class="mark" aria-hidden="true">ϟ</span> rock-n-host</a>
+    <nav aria-label="Main navigation"><a href="./sites/projects.html">Projects</a><a href="./sites/about.html">About</a><a href="./sites/terminal.html">Terminal</a><a class="profile" href="https://github.com/rock-n-host">GitHub ↗</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="intro"><div class="eyebrow"><i></i> Personal space / public source</div>
+        <h1 id="hero-title" aria-label="Rock ’n’ Host.">Rock ’n’<br><span class="glitch" data-text="Host" aria-hidden="true">Host</span><span aria-hidden="true">.</span></h1>
+        <p>A personal collection of self-hosted tools, Linux configs, and code.</p>
+        <div class="hero-actions"><a class="cta" href="./sites/projects.html">Explore projects <span>↓</span></a><a class="textlink" href="./sites/terminal.html">Launch terminal ↗</a></div>
+        <div class="boot" aria-hidden="true"><span class="boot-light"></span> SIGNAL FOUND <span class="boot-track"></span> RNH / ONLINE</div>
+      </div>
+      <div class="print" role="img" aria-label="Orange and black gig poster featuring an electric guitar and sound waves">
+        <div class="print-head"><span>RNH SOUND DEPT.</span><span>FIG. 001</span></div>
+        <svg class="art" viewBox="0 0 500 338" aria-hidden="true">
+          <defs>
+            <pattern id="dots" width="5" height="5" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#1b1a17"/></pattern>
+            <pattern id="hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(28)"><path d="M0 0V4" stroke="#292721" stroke-width="1"/></pattern>
+            <pattern id="frets" width="32" height="12" patternUnits="userSpaceOnUse"><path d="M0 1H32" stroke="#ece8d7" stroke-width="1.4"/></pattern>
+          </defs>
+          <g fill="none" stroke="#e8e3d3" opacity=".52" stroke-width="1.3" id="waves">
+            <path d="M-10 170Q58 75 132 153T275 183T420 164T515 118"/>
+          </g>
+          <circle cx="264" cy="168" r="121" fill="#fc5b2a"/><circle cx="264" cy="168" r="121" fill="url(#dots)"/>
+          <g transform="translate(247 168) rotate(36) scale(.94)" stroke="#1a1917" stroke-linejoin="round">
+            <path id="body" d="M-11 14C-30 34 -49 22 -47 -8C-65 5 -64 26 -53 49C-42 69 -56 79 -62 99C-73 139 -44 157 -7 159C26 162 59 143 56 114C54 91 37 78 40 61C42 48 57 42 52 21C49 35 29 43 15 29L13 13Z" fill="#ede8d8" stroke-width="5"/>
+            <use href="#body" fill="url(#hatch)" style="fill:url(#hatch)" opacity=".25" transform="translate(-3 3)"/>
+            <path d="M-9 28C-23 45 -37 38 -45 29C-40 47 -29 52 -30 72C-30 91 -38 104 -22 110L17 112C31 106 18 84 25 65C28 54 37 50 41 43C27 51 16 46 9 36Z" fill="#3c3932" stroke-width="2"/>
+            <path d="M-12 40L-9 -122L8 -122L13 40Z" fill="#423e36" stroke-width="3"/>
+            <path d="M-10 39L-8 -120H7L11 39Z" fill="url(#frets)"/>
+            <path d="M-9 -121L-17 -152L-12 -174Q-5 -180 1 -172L16 -137L9 -121Z" fill="#e6dfcc" stroke-width="3"/>
+            <g fill="#eee8d9"><circle cx="-17" cy="-162" r="4"/><circle cx="-16" cy="-149" r="4"/><circle cx="-12" cy="-136" r="4"/><circle cx="2" cy="-166" r="4"/><circle cx="8" cy="-154" r="4"/><circle cx="14" cy="-142" r="4"/></g>
+            <g fill="#d8d3c5" stroke-width="2"><rect x="-14" y="47" width="28" height="9" rx="2"/><rect x="-15" y="72" width="30" height="9" rx="2"/><rect x="-17" y="93" width="34" height="8" rx="2"/></g>
+            <g stroke="#e8e5d9" stroke-width=".8"><path d="M-6 -131L-8 98M-4 -131L-5 98M-2 -131L-2 98M1 -131L1 98M3 -131L4 98M5 -131L7 98"/></g>
+            <g fill="#28261f"><circle cx="30" cy="97" r="5"/><circle cx="33" cy="116" r="5"/></g>
+          </g>
+          <g fill="#ede8d8"><path d="M80 41l3 12 12 3-12 3-3 12-3-12-12-3 12-3zM399 254l3 14 14 3-14 3-3 13-3-13-13-3 13-3z"/></g>
+        </svg>
+        <div class="print-foot"><span>AMPLIFIED SIGNAL</span><span class="bars" aria-hidden="true"></span><span>STEREO / 01</span></div>
+      </div>
+    </section>
+    <section class="section wrap endnote" id="notes" aria-labelledby="notes-title">
+      <div class="eyebrow"><i></i> 04 / Sample text — make it yours</div>
+      <h2 id="notes-title">Always a work in progress<span>.</span></h2>
+      <p>This is a small corner of the internet for things I’m making, breaking, and figuring out along the way. Some ideas turn into useful tools. Others become late-night experiments. There’s always another question to chase, another configuration to tweak, and another reason to start something new.</p>
+      <a class="textlink" href="https://github.com/rock-n-host">Follow the experiments on GitHub ↗</a>
+      <span class="end-symbol" aria-hidden="true">✳</span>
+    </section>
+  </main>
+  <footer class="wrap"><span>rock-n-host <small> / END OF TRANSMISSION</small></span><button class="motion-toggle" type="button" aria-pressed="false" hidden>Pause motion</button><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
